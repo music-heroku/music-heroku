@@ -1,3 +1,4 @@
+# coding: latin-1
 import os
 from flask import Flask
 
@@ -7,7 +8,7 @@ app = Flask(__name__)
 def hello():
     title = ""
     artist = ""
-    return "♫"+artist+"-"+title
+    return "♫ "+artist+" - "+title
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
